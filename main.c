@@ -6,10 +6,11 @@
 int main(int argc, char *argv[]) {
 	int a;
 	
-	printf("input the second:");
+	printf("input the year:");
 	scanf("%i", &a);
 	
-	printf("the time is %d:%d\n", a/60, a%60);
+	printf("is %i leaf year? %i\n", a,
+									(a%4==0 && a%100!=0)||(a%400==0));
 	
 	return 0;
 }
